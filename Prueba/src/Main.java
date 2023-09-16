@@ -1,9 +1,11 @@
+import java.util.Arrays;
+
 public class Main {
     public static double suma(Figura[] v)
     {
         double res = 0;
 
-        for(int i = 0; i < 5; i++)
+        for(int i = 0; i < 4; i++)
         {
             res = res + v[i].area();
         }
@@ -17,11 +19,16 @@ public class Main {
         v[0] = new Rectangulo(5, 3);
         v[1] = new Circulo(5);
         v[2] = new Cuadrado(5);
-        //v[3] = new Triangulo(12,14);
+        v[3] = new Triangulo(12,14);
 
         double res = suma(v);
 
         System.out.println("suma: " + res);
+        Arrays.sort(v);
+        for (Figura f : v){
+            System.out.println(f.area());
+        }
+
         //print(v);
         // sort(v);
         // print(v);

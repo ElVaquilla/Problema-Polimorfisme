@@ -1,14 +1,14 @@
-public abstract class Figura {
+public abstract class Figura implements Comparable<Figura> {
 
     public abstract double area();
     int r;
-   /* public int compare(double a, double b){
-        if(a<b)
-            r=-1;
-        if(a==b)
+   public int compareTo(Figura f){
+        if(this.area() > f.area())
+            r=1;
+        if(this.area()==f.area())
             r= 0;
-        if(a>b)
-            r= 1;
+        if(this.area()>f.area())
+            r= -1;
         return r;
-    }*/
+    }
 }

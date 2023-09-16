@@ -2,8 +2,7 @@ public class Cuadrado extends Rectangulo {
     double l;   // Longitud aristas
     double a;   // Area
 
-    public Cuadrado(double l){
-        this.l = l;
+    public Cuadrado(double l){super(l,l);
     }
 
 
