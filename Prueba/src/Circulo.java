@@ -13,9 +13,4 @@ public class Circulo extends Figura{
         this.a = a;
         return a;
     }
-
-    @Override
-    public int compareTo(Figura o) {
-        return 0;
-    }
 }
